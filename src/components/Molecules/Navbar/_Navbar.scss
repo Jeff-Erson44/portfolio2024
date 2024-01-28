@@ -17,6 +17,7 @@
 @media screen and (max-width: 768px) {
     .navbar {
         width: calc(100% - $m32*2);
+        background: $background;
     }
 
 }

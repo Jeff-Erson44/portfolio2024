@@ -12,14 +12,14 @@
         background-color: $black;
         color: white!important;
         &:hover {
-            background-color: $primary;
-            color: $black;
+            background-color: $primary!important;
+            color: $black!important;
             border: .105rem solid $primary;
         }
         }
     &:hover {
     background-color: $black;
-    color: white;
+    color: white!important;
     transition: background-color .5s ease, color 0.3s ease-in-out;
     will-change: auto;
     }

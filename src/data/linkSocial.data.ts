@@ -1,7 +1,7 @@
 export const socials = [
     {
         name: 'my resume',
-        url:''
+        url:'images/cv.pdf'
     },
     {
         name: 'my bento',
