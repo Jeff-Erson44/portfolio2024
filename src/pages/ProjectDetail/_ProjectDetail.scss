@@ -69,6 +69,7 @@
         grid-column: 1/-1;
         &--medium{
             flex-wrap: wrap;
+            justify-content: center;
             &__image{
                 width: 100%;
                 margin-bottom: $m32;
@@ -81,7 +82,7 @@
                 }
                 .info{
                     &__button{
-                        margin-bottom: $m64;
+                        margin-bottom: $m100;
                     }
                 }
             }

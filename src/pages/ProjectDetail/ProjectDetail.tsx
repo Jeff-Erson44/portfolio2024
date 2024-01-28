@@ -23,6 +23,7 @@ export const ProjectDetail = () => {
                 const dataFecth = items.map((item: any) => item.fields);
                 const matchedProject = dataFecth.find((p: fieldsProject) => p.slug === slug);
                 setProject(matchedProject);
+                console.log(matchedProject);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -93,12 +94,12 @@ export const ProjectDetail = () => {
                         <div className='info__button'>
                             <Button 
                                 variant='primary'
-                                link='/'
+                                link={project?.siteLink}
                                 type='button'
                             >View Site</Button>
                             <Button 
                                 variant='secondary'
-                                link='/'
+                                link={project?.linkGit}
                                 type='button'
                             >View Git</Button>
                         </div>
