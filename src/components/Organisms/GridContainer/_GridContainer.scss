@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+// Grid Desktop
+$grid-columns: 10;
+$grid-margin: 0 $m64;
+$grid-gutter: $m20;
+
+// Grid Mobile
+$mobile-grid-columns: 5;
+$mobile-grid-margin: 0 $m32;
+$mobile-grid-gutter: $m8;
+
+// Class 
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-gap: $grid-gutter;
+    margin: $grid-margin;
+}
+
+@media screen and (max-width: 768px){
+    .grid-container {
+        grid-template-columns: repeat($mobile-grid-columns, 1fr);
+        grid-gap: $mobile-grid-gutter;
+        margin: $mobile-grid-margin;
+    }
+}

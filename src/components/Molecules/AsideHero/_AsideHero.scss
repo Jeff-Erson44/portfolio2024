@@ -1,0 +1,15 @@
+@import '../../../styles/settings.scss';
+
+.asideHero__container{
+    position: fixed;
+    top: $m50;
+    left: $m64;
+    display: grid;
+    grid-column: 1 / 2;
+}
+
+@media screen and (max-width: 768px){
+    .asideHero__container{
+        left: $m32;
+    }
+}

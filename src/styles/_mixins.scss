@@ -1,0 +1,32 @@
+/*   Fonts   */
+
+@mixin Font($weight){
+    font-weight: $weight;
+}
+
+@mixin fadeIn($time) {
+    @keyframes fadeIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+    animation: fadeIn $time ease-out;
+}
+@mixin fadeInBottom($time) {
+    @keyframes fadeInBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+    animation: fadeInBottom $time ease-out;
+}

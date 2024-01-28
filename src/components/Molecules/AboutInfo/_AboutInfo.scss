@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+.container__about{
+    grid-column: 2/6;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.container__aboutInfo{
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: calc($m16/2);
+    margin-bottom: $m32;
+
+    p{
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container__about{
+        grid-column: 1/-1;
+        margin-bottom: $m64;
+        height: auto;
+    }
+}

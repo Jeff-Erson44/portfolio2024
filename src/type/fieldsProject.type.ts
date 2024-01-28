@@ -1,0 +1,18 @@
+export type fieldsProject = {
+    title: string,
+    type: string,
+    client: string,
+    year: number,
+    description: string,
+    techno: string[],
+    slug: string,
+    link: string,
+    linkGit: string,
+    thumbnail: string[],
+    typeProject: string,
+    imageGallery: string[],
+    customVideo: string,
+    id: number,
+    includes: boolean,
+    sys: string,
+}

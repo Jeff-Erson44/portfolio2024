@@ -1,0 +1,14 @@
+@import '../../../styles/settings.scss';
+
+.itemBar{
+    height: 3px;
+    width: inherit;
+    background: $primary;
+    transition: all .8s cubic-bezier(0.4, 0, 1, 1);;
+    will-change: auto;
+    &.active{
+        background: $black;
+        transition: all .8s cubic-bezier(0.4, 0, 1, 1);;
+        will-change: auto;
+    }
+}

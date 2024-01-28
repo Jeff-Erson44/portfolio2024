@@ -1,0 +1,50 @@
+@import '../../styles/settings.scss';
+    .title__about{
+        text-transform: uppercase;
+        grid-column: 2/6;
+        line-height: 1.4;
+        margin: $m100 0 $m64;
+        font-size: .9rem;
+    }
+
+    .about{
+        &__interact{
+            grid-column: 6/12;
+            h2{
+                margin-bottom: $m8;
+            }
+            li{
+                overflow: hidden;
+                a{
+                    text-transform: uppercase;
+                    font-size: .8rem;
+                }
+                img{
+                    position: relative;
+                    left: -$m16;
+                    top: $m32;
+                    transition: .7s ease-in-out;
+                    will-change: auto;
+                }
+                &:hover img{
+                    transition: .7s ease-in-out;
+                    left: 3px;
+                    top: 4px;
+                    will-change: auto;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .title__about{
+            margin: calc($m100*2.5) 0 $m64;
+            grid-column: 1/-1;
+        }
+        .about{
+            &__interact{
+                grid-column: 1/-1;
+                margin-bottom: $m64;
+            }
+        }
+    }

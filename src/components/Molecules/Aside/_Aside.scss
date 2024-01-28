@@ -1,0 +1,19 @@
+@import '../../../styles/settings.scss';
+
+.container__aside{
+    display: grid;
+    z-index: 9;
+    top: $m100;
+    left: calc(100% - $m64*2);
+    gap: $m16;
+    p{
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container__aside{
+        gap: $m16;
+        left: calc(100% - $m64*1.5);
+    }
+}

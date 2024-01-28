@@ -1,0 +1,20 @@
+@import '../../../styles/settings.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: $m16 0;
+    position: fixed;
+    top: 0; 
+    width: calc(100% - $m32*4);
+    z-index: 9;
+    @include fadeInBottom(1s);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: calc(100% - $m32*2);
+        background: none;
+    }
+
+}

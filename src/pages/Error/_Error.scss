@@ -1,0 +1,34 @@
+@import '../../styles/settings.scss';
+
+.container__error{
+    height: 100vh;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $m32;
+    position: relative;
+    p::before{
+        content: 'Errror 404';
+        font-size: 10rem;
+        position: absolute;
+        transform: translateX(-25%) translateY(-25%);
+        z-index: -1;
+        color: $primary;
+        opacity: .125;
+        font-family: 'Dahlia';
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container__error{
+        p{
+        font-size: 3rem;
+        }
+        p::before{
+            font-size: 3.25rem;
+            transform: translate(-5%, -10%);
+        }
+    }
+}
