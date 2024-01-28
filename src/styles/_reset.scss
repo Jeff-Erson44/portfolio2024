@@ -31,7 +31,13 @@ body {
     user-select: none;
 	background-color: hsl(0, 0%, 97%);
 	overflow-x: hidden;
+	scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer et Edge */
+	&::-webkit-scrollbar {
+		width: 0; /* Safari et Chrome */
+	}
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -51,7 +57,7 @@ a{
     text-decoration: none;
     color: black;
     &:visited{
-        color: black;
+        color: black!important;
     }
 }
 button{

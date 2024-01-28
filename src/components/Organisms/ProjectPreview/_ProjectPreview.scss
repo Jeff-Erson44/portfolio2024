@@ -30,6 +30,9 @@
         display: flex;
         gap: 20px;
         overflow: hidden;
+        &::-webkit-scrollbar {
+            width: 0; /* Safari et Chrome */
+        }
         img{
             width: 180px;
             height: 180px;

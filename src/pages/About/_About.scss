@@ -39,7 +39,7 @@
 
     @media screen and (max-width: 768px){
         .title__about{
-            margin: calc($m100*2.5) 0 $m64;
+            margin: $m150 0 $m64;
             grid-column: 1/-1;
         }
         .about{

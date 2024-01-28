@@ -6,7 +6,6 @@
     position: fixed;
     bottom: 0;
     width: calc(100% - $m32*4);
-    padding: $m16 0;
     will-change: auto;
     animation-delay: 2s;
     @include link;
@@ -39,6 +38,7 @@
     .footer{
         justify-content: center;
         width: calc(100% - $m32*2);
+        background: $background;
         ul:last-child{
             display: none;
         }
