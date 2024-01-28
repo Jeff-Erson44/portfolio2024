@@ -46,13 +46,13 @@
 }
 
 @mixin hightBody {
-    @include Font(450);
+    font-weight: 450;
     line-height: 24px;
     text-transform: uppercase;
 }
 
 @mixin link {
-    @include Font(450);
+    font-weight: 450;
     font-size: 0.75rem;
     text-transform: uppercase;
     line-height: 20px;

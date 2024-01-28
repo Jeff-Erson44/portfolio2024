@@ -10,6 +10,7 @@ export const ProjectPreview = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
                 const items = await useContentful();
                 const dataFetch = items.map((item: any) => item.fields);
                 setProject(dataFetch);
