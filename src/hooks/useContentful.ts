@@ -8,7 +8,7 @@ const client = createClient({
 export const useContentful = async () => {
     try{
         const response = await client.getEntries({
-            order: 'sys.createdAt'
+            order: ['sys.createdAt']
         });
         return response.items;
     } catch (error) {

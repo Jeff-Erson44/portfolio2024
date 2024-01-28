@@ -7,7 +7,7 @@ import { useTextStyles } from '../../hooks/useTextStyles';
 import { Button } from '../../components/Atoms/Button/Button';
 import { ProgressBar } from '../../components/Molecules/ProgressBar/ProgressBar'
 import { InfoProject } from '../../components/Molecules/InfoProject/InfoProject';
-import { fieldsProject } from '../../type/fieldsProject.type';
+import { fieldsProject } from '../../type/fieldsProject';
 
 export const ProjectDetail = () => {
 
@@ -64,7 +64,7 @@ export const ProjectDetail = () => {
             <div className='container__projectDetail--medium'>
                 <div className='container__projectDetail--medium__image'>
                     <img 
-                        src={`https://${project?.imageGallery?.[indexImage]?.fields?.file.url}`}
+                        src={`https://${project?.imageGallery?.[indexImage]?.fields?.file?.url}`}
                         alt={project?.imageGallery?.[indexImage]?.fields?.title}
                     />
                     <ProgressBar length={lengthGallery ?? 0} />

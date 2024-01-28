@@ -3,7 +3,7 @@ import { useContentful } from '../../../hooks/useContentful';
 import './_InfoProject.scss';
 import { useState, useEffect } from 'react';
 import { infoProject } from '../../../data/infoProject.data';
-import { fieldsProject } from '../../../type/fieldsProject.type';
+import { fieldsProject } from '../../../type/fieldsProject';
 
 export const InfoProject = () => {
     const { slug } = useParams();

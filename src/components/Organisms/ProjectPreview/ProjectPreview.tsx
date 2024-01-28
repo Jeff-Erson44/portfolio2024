@@ -1,6 +1,6 @@
 import { useContentful } from '../../../hooks/useContentful';
 import { useTextStyles } from '../../../hooks/useTextStyles';
-import { fieldsProject } from '../../../type/filedsProject.type';
+import { fieldsProject } from '../../../type/fieldsProject';
 import './_ProjectPreview.scss'
 import { useState, useEffect } from 'react';
 
@@ -40,10 +40,10 @@ export const ProjectPreview = () => {
                         {project?.thumbnail.map((image: string, index: number) => (
                             <img
                                 key={index}
-                                src={image.fields.file.url}
-                                alt={image.fields.title}
-                                width={image.fields.file.details.image.width}
-                                height={image.fields.file.details.image.height}
+                                src={(image as any)?.fields?.file.url}
+                                alt={(image as any)?.fields?.title}
+                                width={(image as any)?.fields?.file.details.image.width}
+                                height={(image as any)?.fields?.file.details.image.height}
                             />
                         ))}
                     </div>
