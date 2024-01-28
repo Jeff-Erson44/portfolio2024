@@ -12,6 +12,7 @@
             grid-column: 6/12;
             h2{
                 margin-bottom: $m8;
+                @include hightBody;
             }
             li{
                 overflow: hidden;

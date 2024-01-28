@@ -9,6 +9,9 @@
     width: calc(100% - $m32*4);
     z-index: 9;
     @include fadeInBottom(1s);
+    p{
+        @include link;
+    }
 }
 
 @media screen and (max-width: 768px) {

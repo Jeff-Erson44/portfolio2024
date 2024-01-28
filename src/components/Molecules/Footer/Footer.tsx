@@ -1,14 +1,9 @@
 import { socials } from "../../../data/linkSocial.data";
 import './_Footer.scss'
-import { useTextStyles } from "../../../hooks/useTextStyles";
-
 
 export const Footer = () => {
-
-    const textStyles = useTextStyles();
-
     return (
-        <footer className={`${textStyles.link} footer`}>
+        <footer className={` footer`}>
             <ul>
                 <li>
                     <a href="mailto:jeffersonk.pro@gmail.com">Mail me</a>
@@ -28,7 +23,7 @@ export const Footer = () => {
                 ))}
             </ul>
             <ul>
-                <li className={`${textStyles.link}`}>Jefferson.K©2024</li>
+                <li>Jefferson.K©2024</li>
             </ul>
         </footer>
     );

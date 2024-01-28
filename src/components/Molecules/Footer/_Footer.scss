@@ -9,6 +9,7 @@
     padding: $m16 0;
     will-change: auto;
     animation-delay: 2s;
+    @include link;
     @include fadeIn(1s);
     ul{
         display: flex;

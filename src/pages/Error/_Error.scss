@@ -9,6 +9,9 @@
     align-items: center;
     gap: $m32;
     position: relative;
+    p{
+        @include title;
+    }
     p::before{
         content: 'Errror 404';
         font-size: 10rem;

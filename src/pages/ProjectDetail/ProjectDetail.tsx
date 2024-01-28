@@ -3,7 +3,6 @@ import './_ProjectDetail.scss';
 import { useParams } from 'react-router-dom';
 import { useContentful } from '../../hooks/useContentful';
 import { useState, useEffect, SetStateAction } from 'react';
-import { useTextStyles } from '../../hooks/useTextStyles';
 import { Button } from '../../components/Atoms/Button/Button';
 import { ProgressBar } from '../../components/Molecules/ProgressBar/ProgressBar'
 import { InfoProject } from '../../components/Molecules/InfoProject/InfoProject';
@@ -12,7 +11,6 @@ import { fieldsProject } from '../../type/fieldsProject.type';
 export const ProjectDetail = () => {
 
     const { slug } = useParams();
-    const textStyles = useTextStyles();
     const [project, setProject] = useState<fieldsProject | null>(null); 
     const [indexImage, setIndexImage] = useState<number>(0);
     const lengthGallery = project?.imageGallery?.length;
@@ -58,8 +56,8 @@ export const ProjectDetail = () => {
         <section className='container__projectDetail'>
             <div className='container__projectDetail--highlight'>
                 <h1>{project?.title}</h1>
-                <h2 className={`${textStyles.link}`}>{project?.typeProject}</h2>
-                <h3 className={`${textStyles.link}`}>{project?.client} - {project?.year}</h3>
+                <h2>{project?.typeProject}</h2>
+                <h3>{project?.client} - {project?.year}</h3>
             </div>
             <div className='container__projectDetail--medium'>
                 <div className='container__projectDetail--medium__image'>

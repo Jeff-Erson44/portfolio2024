@@ -8,6 +8,7 @@
     gap: $m16;
     p{
         text-align: end;
+        @include link;
     }
 }
 

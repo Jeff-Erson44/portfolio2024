@@ -15,6 +15,10 @@
         &__highlight{
         display: flex;
         justify-content: space-between;
+        p, h2{
+            @include hightBody
+        }
+
         }
         h3{
             text-align: end;

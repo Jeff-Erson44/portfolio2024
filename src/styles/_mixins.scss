@@ -4,6 +4,61 @@
     font-weight: $weight;
 }
 
+@mixin Font($weight) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $weight;
+}
+
+@mixin heroTitle {
+    @include Font(450);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+@mixin heroSubtitle {
+    @include Font(450);
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+@mixin subTitle {
+    @include Font(450);
+    font-size: 1.25rem;
+    letter-spacing: 4%;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+@mixin title {
+    @include Font(450);
+    letter-spacing: 4%;
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 104px;
+}
+
+@mixin body {
+    @include Font(400);
+    line-height: 24px;
+}
+
+@mixin hightBody {
+    @include Font(450);
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@mixin link {
+    @include Font(450);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+
 @mixin fadeIn($time) {
     @keyframes fadeIn {
     0% {

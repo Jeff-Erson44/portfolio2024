@@ -1,12 +1,10 @@
 import { useContentful } from '../../../hooks/useContentful';
-import { useTextStyles } from '../../../hooks/useTextStyles';
 import { fieldsProject } from '../../../type/fieldsProject.type';
 import './_ProjectPreview.scss'
 import { useState, useEffect } from 'react';
 
 export const ProjectPreview = () => {
 
-    const textStyles = useTextStyles();
     const [project, setProject] = useState<fieldsProject[]>([]);
 
     useEffect(() => {
@@ -29,8 +27,8 @@ export const ProjectPreview = () => {
                 <div key={index} className='container__projectPreview'>
                     <div className='container__projectPreview--info'>
                         <div className='container__projectPreview--info__highlight'>
-                            <p className={`${textStyles.hightBody}`}>[{index + 1}]</p>
-                            <h2 className={`${textStyles.hightBody}`}>
+                            <p>[{index + 1}]</p>
+                            <h2>
                                 <a href={`/project/${project.slug}`}>{project.title}</a>
                             </h2>
                         </div>

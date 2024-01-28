@@ -6,6 +6,9 @@
     left: $m64;
     display: grid;
     grid-column: 1 / 2;
+    p{
+        @include link;
+    }
 }
 
 @media screen and (max-width: 768px){
