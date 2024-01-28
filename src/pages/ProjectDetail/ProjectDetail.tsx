@@ -61,10 +61,13 @@ export const ProjectDetail = () => {
             </div>
             <div className='container__projectDetail--medium'>
                 <div className='container__projectDetail--medium__image'>
+                {typeof project === 'object' && project?.imageGallery?.[indexImage]?.fields && (
                     <img 
-                        src={`https://${project?.imageGallery?.[indexImage]?.fields?.file?.url}`}
-                        alt={project?.imageGallery?.[indexImage]?.fields?.title}
+                        src={`https://${project.imageGallery[indexImage].fields.file.url}`}
+                        alt={project.imageGallery[indexImage].fields.title}
                     />
+                )}
+
                     <ProgressBar length={lengthGallery ?? 0} />
                     <div className='container__projectDetail--navigation'>
                         <div className='navigation'>
