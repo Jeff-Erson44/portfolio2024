@@ -8,6 +8,7 @@
     width: calc(100% - $m32*4);
     will-change: auto;
     animation-delay: 2s;
+    padding: $m16 0;
     @include link;
     @include fadeIn(1s);
     ul{
