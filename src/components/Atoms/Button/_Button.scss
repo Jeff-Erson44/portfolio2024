@@ -10,7 +10,7 @@
     color: black!important;
         &.secondary {
         background-color: $black;
-        color: white;
+        color: white!important;
         &:hover {
             background-color: $primary;
             color: $black;
