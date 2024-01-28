@@ -1,7 +1,6 @@
-import { useTextStyles } from "../../../hooks/useTextStyles";
 import { Aside } from "../Aside/Aside";
 import './_Navbar.scss'
-
+import { useTextStyles } from "../../../hooks/useTextStyles";
 export const Navbar = () => {
 
     const textStyles = useTextStyles();

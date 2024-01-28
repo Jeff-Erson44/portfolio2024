@@ -1,6 +1,6 @@
 import { useContentful } from '../../../hooks/useContentful';
 import { useTextStyles } from '../../../hooks/useTextStyles';
-import { fieldsProject } from '../../../type/fieldsProject';
+import { fieldsProject } from '../../../type/fieldsProject.type';
 import './_ProjectPreview.scss'
 import { useState, useEffect } from 'react';
 

@@ -1,6 +1,6 @@
 import { socials } from "../../../data/linkSocial.data";
-import { useTextStyles } from "../../../hooks/useTextStyles";
 import './_Footer.scss'
+import { useTextStyles } from "../../../hooks/useTextStyles";
 
 
 export const Footer = () => {

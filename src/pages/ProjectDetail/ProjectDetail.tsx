@@ -7,7 +7,7 @@ import { useTextStyles } from '../../hooks/useTextStyles';
 import { Button } from '../../components/Atoms/Button/Button';
 import { ProgressBar } from '../../components/Molecules/ProgressBar/ProgressBar'
 import { InfoProject } from '../../components/Molecules/InfoProject/InfoProject';
-import { fieldsProject } from '../../type/fieldsProject';
+import { fieldsProject } from '../../type/fieldsProject.type';
 
 export const ProjectDetail = () => {
 

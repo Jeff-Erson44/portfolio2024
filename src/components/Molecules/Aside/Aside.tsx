@@ -1,6 +1,6 @@
-import { useTextStyles } from "../../../hooks/useTextStyles";
 import { asideData } from "../../../data/aside.data";
 import "./_Aside.scss";
+import { useTextStyles } from "../../../hooks/useTextStyles";
 
 export const Aside = () => {
 
