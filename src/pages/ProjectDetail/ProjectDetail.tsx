@@ -7,11 +7,13 @@ import { Button } from '../../components/Atoms/Button/Button';
 import { ProgressBar } from '../../components/Molecules/ProgressBar/ProgressBar'
 import { InfoProject } from '../../components/Molecules/InfoProject/InfoProject';
 import { fieldsProject } from '../../type/fieldsProject.type';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 export const ProjectDetail = () => {
 
     const { slug } = useParams();
-    const [project, setProject] = useState<fieldsProject | null>(null); 
+    const [project, setProject] = useState<fieldsProject | null>(null);
+    const [htmlString, setHtmlString] = useState<string | null>(null); 
     const [indexImage, setIndexImage] = useState<number>(0);
     const lengthGallery = project?.imageGallery?.length;
 
@@ -23,7 +25,9 @@ export const ProjectDetail = () => {
                 const dataFecth = items.map((item: any) => item.fields);
                 const matchedProject = dataFecth.find((p: fieldsProject) => p.slug === slug);
                 setProject(matchedProject);
-                console.log(matchedProject);
+                const projectDescription = matchedProject?.description;
+                const descriptionHtml = projectDescription && documentToHtmlString(projectDescription);
+                setHtmlString(descriptionHtml);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -85,9 +89,7 @@ export const ProjectDetail = () => {
                 </div>
                 <div className='container__projectDetail--medium__info'>
                     <div className='description'>
-                        <p className='description'>
-                            {project?.description}
-                        </p>
+                        <p className='description' dangerouslySetInnerHTML={{ __html: htmlString || '' }}></p>
                     </div>
                     <div className='info'>
                         <InfoProject />
