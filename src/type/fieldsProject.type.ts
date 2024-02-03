@@ -7,7 +7,7 @@ export type fieldsProject = {
     techno: string[],
     slug: string,
     siteLink: string,
-    linkGit: string,
+    gitHubLink: string,
     thumbnail: string[],
     typeProject: string,
     imageGallery: string[],

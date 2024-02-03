@@ -28,6 +28,7 @@ export const ProjectDetail = () => {
                 const projectDescription = matchedProject?.description;
                 const descriptionHtml = projectDescription && documentToHtmlString(projectDescription);
                 setHtmlString(descriptionHtml);
+                console.log(matchedProject);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -101,7 +102,7 @@ export const ProjectDetail = () => {
                             >View Site</Button>
                             <Button 
                                 variant='secondary'
-                                link={project?.linkGit}
+                                link={project?.gitHubLink}
                                 type='button'
                             >View Git</Button>
                         </div>
