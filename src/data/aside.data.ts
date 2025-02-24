@@ -5,7 +5,7 @@ export const asideData = [
     },
     {
         name: 'My work',
-        url:'/projectlist'
+        url:'/'
     },
     {
         name: 'About me',

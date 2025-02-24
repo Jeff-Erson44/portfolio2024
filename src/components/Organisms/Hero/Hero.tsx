@@ -6,12 +6,14 @@ export const Hero = () => {
         <section className="container__hero">
             <h2>I am developer<br/> of  digital solution</h2>
             <h1>Jefferson.K</h1>
-            <h3>My name is Jefferson, 24 years old developer based in Paris. With over 3 years of experience as a freelancer, I am passionate about web development and innovative technologies such as blockchain and cryptocurrencies.</h3>
+            <h3>Portfolio in building.
+                please come back in few days.
+            </h3>
             <Button
                 variant="primary"
-                link="/projectList"
+                link="/"
                 type="button"
-            >View works
+            >IN PROGRESS
             </Button>
         </section>
     );

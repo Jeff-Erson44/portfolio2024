@@ -5,8 +5,6 @@ import { Index } from './pages/Index'
 import { Error } from './pages/Error/Error'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { About } from './pages/About/About'
-import { ProjectList } from './pages/ProjectList/ProjectList'
-import { ProjectDetail } from './pages/ProjectDetail/ProjectDetail'
 import { AsideHero } from './components/Molecules/AsideHero/AsideHero'
 
 function App() {
@@ -19,8 +17,6 @@ function App() {
         <Routes>
           {/* shift + cmd + ; */}
           <Route path="/" element={<Index/>} />
-          <Route path="/projectList" element={<ProjectList/>} />
-          <Route path="/project/:slug" element={<ProjectDetail/>} />
           <Route path="/about" element={<About/>} />
           <Route path="*" element={<Error/>} />
           {/* tout autres chemins */}
